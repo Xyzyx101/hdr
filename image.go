@@ -104,6 +104,24 @@ func (p *RGB) SetRGB(x, y int, c hdrcolor.RGB) {
 	p.Pix[i+2] = float32(c.B)
 }
 
+// SubImage returns an image representing the portion of the image p visible
+// through r. The returned value shares pixels with the original image.
+func (p *RGB) SubImage(r image.Rectangle) Image {
+	r = r.Intersect(p.Rect)
+	// If r1 and r2 are Rectangles, r1.Intersect(r2) is not guaranteed to be inside
+	// either r1 or r2 if the intersection is empty. Without explicitly checking for
+	// this, the Pix[i:] expression below can panic.
+	if r.Empty() {
+		return &RGB{}
+	}
+	i := p.PixOffset(r.Min.X, r.Min.Y)
+	return &RGB{
+		Pix:    p.Pix[i:],
+		Stride: p.Stride,
+		Rect:   r,
+	}
+}
+
 // RGB64 is an in-memory 64 bits floating points image whose At method returns hdrcolor.RGB values.
 type RGB64 struct {
 	// Pix holds the image's pixels, in R, G, B order. The pixel at
@@ -344,4 +362,22 @@ func (p *XYZ64) SetXYZ(x, y int, c hdrcolor.XYZ) {
 	p.Pix[i+0] = c.X
 	p.Pix[i+1] = c.Y
 	p.Pix[i+2] = c.Z
+}
+
+// SubImage returns an image representing the portion of the image p visible
+// through r. The returned value shares pixels with the original image.
+func (p *RGB64) SubImage(r image.Rectangle) Image {
+	r = r.Intersect(p.Rect)
+	// If r1 and r2 are Rectangles, r1.Intersect(r2) is not guaranteed to be inside
+	// either r1 or r2 if the intersection is empty. Without explicitly checking for
+	// this, the Pix[i:] expression below can panic.
+	if r.Empty() {
+		return &RGB64{}
+	}
+	i := p.PixOffset(r.Min.X, r.Min.Y)
+	return &RGB64{
+		Pix:    p.Pix[i:],
+		Stride: p.Stride,
+		Rect:   r,
+	}
 }
