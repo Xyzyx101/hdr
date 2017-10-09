@@ -4,8 +4,8 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/hdrcolor"
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/hdrcolor"
 )
 
 // A QuickSampling allows to iterate on pixels over a reduced image size.

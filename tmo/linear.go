@@ -4,8 +4,8 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/util"
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/util"
 )
 
 // A Linear is a naive TMO implementation.

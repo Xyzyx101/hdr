@@ -7,9 +7,9 @@ import (
 	"sort"
 	"sync"
 
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/util"
 	colorful "github.com/lucasb-eyer/go-colorful"
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/util"
 )
 
 // A ICam06Normalization is a part of iCAM06 TMO implementation.

@@ -6,9 +6,9 @@ import (
 	"image"
 	"io"
 
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/format"
-	"github.com/mdouchement/hdr/hdrcolor"
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/format"
+	"github.com/Xyzyx101/hdr/hdrcolor"
 )
 
 type decoder struct {

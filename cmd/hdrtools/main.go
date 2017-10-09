@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mdouchement/hdr/cmd/hdrtools/cmd"
+	"github.com/Xyzyx101/hdr/cmd/hdrtools/cmd"
 	"github.com/spf13/cobra"
 )
 

@@ -6,9 +6,9 @@ import (
 	"math"
 	"sync"
 
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/util"
 	colorful "github.com/lucasb-eyer/go-colorful"
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/util"
 )
 
 // A Drago03 is an adaptive TMO implementation based on Frederic Drago's 2003 white paper.

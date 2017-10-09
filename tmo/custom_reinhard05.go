@@ -5,9 +5,9 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/filter"
-	"github.com/mdouchement/hdr/util"
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/filter"
+	"github.com/Xyzyx101/hdr/util"
 )
 
 // A CustomReinhard05 is a custom Reinhard05 TMO implementation.

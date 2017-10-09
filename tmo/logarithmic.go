@@ -5,8 +5,8 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/util"
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/util"
 )
 
 // A Logarithmic is a naive TMO implementation.

@@ -6,9 +6,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/crad"
-	"github.com/mdouchement/hdr/rgbe"
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/crad"
+	"github.com/Xyzyx101/hdr/rgbe"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 )

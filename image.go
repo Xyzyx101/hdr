@@ -4,7 +4,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/mdouchement/hdr/hdrcolor"
+	"github.com/Xyzyx101/hdr/hdrcolor"
 )
 
 // Image is a finite rectangular grid of hdrcolor.Color values taken from a color

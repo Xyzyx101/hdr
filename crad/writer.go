@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/format"
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/format"
 )
 
 type encoder struct {

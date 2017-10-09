@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/mdouchement/hdr"
+	"github.com/Xyzyx101/hdr"
 )
 
 const (

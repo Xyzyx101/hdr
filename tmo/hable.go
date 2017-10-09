@@ -5,7 +5,7 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/mdouchement/hdr"
+	"github.com/Xyzyx101/hdr"
 )
 
 // Hable is an implementation of the Uncharted 2 tonempper by John Hable

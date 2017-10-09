@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/mdouchement/hdr"
-	"github.com/mdouchement/hdr/format"
+	"github.com/Xyzyx101/hdr"
+	"github.com/Xyzyx101/hdr/format"
 )
 
 // RLEWrites allows to write image file with run-length encoding.
